@@ -1,0 +1,84 @@
+html,
+body,
+#map-id {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.legend {
+  padding: 10px;
+  font-family: Sanchez, serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #555;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.legend .low {
+  color: #225E6F;
+}
+
+.legend .empty {
+  color: #D5361F;
+}
+
+.legend .full {
+  color: #41B4E4;
+}
+
+.navbar-brand {
+  background: #41B4E4;
+  color: white;
+  }
+
+.navbar {
+  background: #41B4E4;
+  color: white;
+  }
+
+.nav {
+  background: #41B4E4;
+  color: white;
+  a: white;
+  }
+
+a:link {
+  color: white;
+  background-color: #41b4e4;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color:  #41b4e4;
+  text-decoration: none;
+=======
+  color: #d5361f;
+}
+
+a:hover {
+  color: white;
+  background-color:  #41b4e4;
+  text-decoration: underline;
+}
+
+a:active {
+  color: white;
+  background-color:  #41b4e4;
+  text-decoration: underline;
+}
+
+body {
+  background:#ffffff
+}
+
+
+.btn {
+  color:  #ffffff;
+  background: #41b4e4;
+
+}
