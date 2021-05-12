@@ -1,4 +1,4 @@
-url = "https://gbfs.divvybikes.com/gbfs/en/station_information.json"
+// url = "https://gbfs.divvybikes.com/gbfs/en/station_information.json"
 
 // d3.json(url).then(function(divvyData) {
     
@@ -16,7 +16,7 @@ url = "https://gbfs.divvybikes.com/gbfs/en/station_information.json"
 //     // console.log(stationArray)
 // })
 
-d3.json(url).then(function(divvyData) {
+d3.json("/api/v1.0/station_information").then(function(divvyData) {
 
     var tbody = d3.select("tbody");
     var allStations = divvyData.data
