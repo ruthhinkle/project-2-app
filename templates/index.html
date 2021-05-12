@@ -12,7 +12,7 @@
 
     <nav class="navbar navbar-expand-md fixed-top">
 
-        <a class="navbar-brand" href="#"><img src="Icons_White/DIVVY_logo.png" alt="DIVVY Logo" style="width:100px;height:29px"></a>
+        <a class="navbar-brand" href="#"><img src="static/Icons_White/DIVVY_logo.png" alt="DIVVY Logo" style="width:100px;height:29px"></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -24,7 +24,7 @@
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="table.html">Table</a>
+                    <a class="nav-link" href="/table.html">Table</a>
             </ul>
         </div>
     </nav>  
@@ -90,7 +90,10 @@
         <div class="btn-group" onclick="bikecToggle(this.value)" role="group" aria-label="Basic outlined example">
             <button type="button" value="classic" class="btn btn-outline-primary">Classic Bikes</button>
           </div>  
-        <a class="btn btn-outline-primary" aria-label="Basic outlined example" class="btn btn-outline-primary" href="index.html"> <span type="button">All Bikes</span></a>
+        <div class="btn-group" onclick="bikeaToggle(this.value)" role="group" aria-label="Basic outlined example">
+        <button type="button" value="bikes" class="btn btn-outline-primary">All Bikes</button>
+        </div>  
+        <!-- <a class="btn btn-outline-primary" aria-label="Basic outlined example" class="btn btn-outline-primary" href="index.html"> <span type="button">All Bikes</span></a> -->
           <!-- <div class="btn-group" onclick="bikeaToggle(this.value)" role="group" aria-label="Basic outlined example">
             <button type="button" value="reset" class="btn btn-outline-primary">All Bikes</button>
           </div>     -->

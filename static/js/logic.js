@@ -252,22 +252,51 @@ function fillStations(stationStatus, stationInfo, updatedAt, bikeEbikes) {
 
 // CODE FOR INDEX.HTML AND "ALL BIKES" TOGGLE BUTTON
 
-// Perform an API call to the Divvy Bike station information endpoint.
-d3.json("https://gbfs.divvybikes.com/gbfs/en/station_information.json").then(function (infoRes) {
+// // Perform an API call to the Divvy Bike station information endpoint.
+// d3.json("/api/v1.0/station_information").then(function (infoRes) {
 
+//   // When the first API call completes, perform another call to the Divvy Bike station status endpoint.
+//   d3.json("/api/v1.0/station_status").then(function (statusRes) {
+//     var updatedAt = infoRes.last_updated;
+//     var stationStatus = statusRes.data.stations;
+//     var stationInfo = infoRes.data.stations;
 
-  // When the first API call completes, perform another call to the Divvy Bike station status endpoint.
-  d3.json("https://gbfs.divvybikes.com/gbfs/en/station_status.json").then(function (statusRes) {
-    var updatedAt = infoRes.last_updated;
-    var stationStatus = statusRes.data.stations;
-    var stationInfo = infoRes.data.stations;
+//     fillStations(stationStatus, stationInfo, updatedAt, "bikes")
 
-    fillStations(stationStatus, stationInfo, updatedAt, "bikes")
+//   });
 
+// });
+bikeaToggle();
+
+function bikeaToggle(bikeType) {
+
+  //destroy previous layers
+  map.eachLayer(function (layer) {
+    map.removeLayer(layer);
+    map.removeLayer(layers);
   });
+  var streetmap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  });
+  streetmap.addTo(map)
 
-});
+  //create new layer
+  var abikelayer = new L.LayerGroup()
 
+  //create empty layers group
+  d3.json("/api/v1.0/station_information").then(function (infoRes) {
+
+
+    // When the first API call completes, perform another call to the Divvy Bike station status endpoint.
+    d3.json("/api/v1.0/station_status").then(function (statusRes) {
+      var updatedAt = infoRes.last_updated;
+      var stationStatus = statusRes.data.stations;
+      var stationInfo = infoRes.data.stations;
+
+      fillStations(stationStatus, stationInfo, updatedAt, "bikes")
+    })
+  });
+};
 
 // CODE FOR E-BIKE TOGGLE BUTTON
 // // Initialize all the LayerGroups that we'll use.
@@ -295,9 +324,11 @@ function bikeeToggle(bikeType) {
   var ebikelayer = new L.LayerGroup()
 
   //create empty layers group
-  d3.json("https://gbfs.divvybikes.com/gbfs/en/station_information.json").then(function (infoRes) {
+  d3.json("/api/v1.0/station_information").then(function (infoRes) {
 
-    d3.json("https://gbfs.divvybikes.com/gbfs/en/station_status.json").then(function (statusRes) {
+
+    // When the first API call completes, perform another call to the Divvy Bike station status endpoint.
+    d3.json("/api/v1.0/station_status").then(function (statusRes) {
       var updatedAt = infoRes.last_updated;
       var stationStatus = statusRes.data.stations;
       var stationInfo = infoRes.data.stations;
@@ -323,9 +354,11 @@ function bikecToggle(bikeType) {
   var classicbikelayer = new L.LayerGroup()
 
   //create empty layers group
-  d3.json("https://gbfs.divvybikes.com/gbfs/en/station_information.json").then(function (infoRes) {
+  d3.json("/api/v1.0/station_information").then(function (infoRes) {
 
-    d3.json("https://gbfs.divvybikes.com/gbfs/en/station_status.json").then(function (statusRes) {
+
+    // When the first API call completes, perform another call to the Divvy Bike station status endpoint.
+    d3.json("/api/v1.0/station_status").then(function (statusRes) {
       var updatedAt = infoRes.last_updated;
       var stationStatus = statusRes.data.stations;
       var stationInfo = infoRes.data.stations;
