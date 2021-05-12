@@ -14,7 +14,6 @@ def index():
 def table():
     return render_template("table.html")
 
-
 # 
 @app.route("/api/v1.0/station_information")
 def station_information():
