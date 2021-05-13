@@ -17,7 +17,7 @@ If you can't reconcile installation issues, let us know!
 ## 💻 How to Run Locally
 <strong>Step 1:</strong> Open your command prompt and navigate to the cloned directory.
 
-<strong>Step 2:</strong>Create the database by entering: 
+<strong>Step 2:</strong> Create the database by entering: 
 ```
 python create_database.py
 ```  
