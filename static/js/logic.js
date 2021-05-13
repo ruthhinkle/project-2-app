@@ -294,6 +294,74 @@ function bikeaToggle(bikeType) {
       var stationInfo = infoRes.data.stations;
 
       fillStations(stationStatus, stationInfo, updatedAt, "bikes")
+      addLandmarks()
+
+      let antPolyline1 = L.polyline.antPath(lineOne, {
+        color: "red",
+        weight: 5
+      
+      })
+      antPolyline1.addTo(map)
+
+      let antPolyline2 = L.polyline.antPath(lineTwo, {
+        color: "green",
+        weight: 3
+      
+      })
+      antPolyline2.addTo(map)
+
+      let antPolyline3 = L.polyline.antPath(lineThree, {
+        color: "black",
+        weight: 3
+      })
+      antPolyline3.addTo(map)
+
+      let antPolyline4 = L.polyline.antPath(lineFour, {
+        color: "purple",
+        weight: 3
+    })
+      antPolyline4.addTo(map)
+
+      let antPolyline5 = L.polyline.antPath(lineFive, {
+        color: "black",
+        weight: 3,
+        pulseColor: "gold"
+      })
+      antPolyline5.addTo(map)
+
+      let antPolyline6 = L.polyline.antPath(lineSix, {
+        color: "black",
+        weight: 3,
+        pulseColor: "red"
+      })
+      antPolyline6.addTo(map)
+
+      let antPolyline7 = L.polyline.antPath(lineSeven, {
+        color: "darkgreen",
+        weight: 3
+      })
+      antPolyline7.addTo(map)
+
+      let antPolyline8 = L.polyline.antPath(lineEight, {
+        color: "teal",
+        weight: 3, 
+        pulseColor: "black"
+      })
+      antPolyline8.addTo(map)
+
+      let antPolyline9 = L.polyline.antPath(lineNine, {
+        color: "brown",
+        weight: 3, 
+        pulseColor: "lightgreen"
+      })
+      antPolyline9.addTo(map)
+
+      let antPolyline10 = L.polyline.antPath(lineTen, {
+        color: "aqua",
+        weight: 3, 
+        pulseColor: "blue"
+      })
+      antPolyline10.addTo(map)
     })
   });
 };
@@ -334,6 +402,74 @@ function bikeeToggle(bikeType) {
       var stationInfo = infoRes.data.stations;
 
       fillStations(stationStatus, stationInfo, updatedAt, "ebikes")
+      addLandmarks()
+
+      let antPolyline1 = L.polyline.antPath(lineOne, {
+        color: "red",
+        weight: 5
+      
+      })
+      antPolyline1.addTo(map)
+
+      let antPolyline2 = L.polyline.antPath(lineTwo, {
+        color: "green",
+        weight: 3
+      
+      })
+      antPolyline2.addTo(map)
+
+      let antPolyline3 = L.polyline.antPath(lineThree, {
+        color: "black",
+        weight: 3
+      })
+      antPolyline3.addTo(map)
+
+      let antPolyline4 = L.polyline.antPath(lineFour, {
+        color: "purple",
+        weight: 3
+    })
+      antPolyline4.addTo(map)
+
+      let antPolyline5 = L.polyline.antPath(lineFive, {
+        color: "black",
+        weight: 3,
+        pulseColor: "gold"
+      })
+      antPolyline5.addTo(map)
+
+      let antPolyline6 = L.polyline.antPath(lineSix, {
+        color: "black",
+        weight: 3,
+        pulseColor: "red"
+      })
+      antPolyline6.addTo(map)
+
+      let antPolyline7 = L.polyline.antPath(lineSeven, {
+        color: "darkgreen",
+        weight: 3
+      })
+      antPolyline7.addTo(map)
+
+      let antPolyline8 = L.polyline.antPath(lineEight, {
+        color: "teal",
+        weight: 3, 
+        pulseColor: "black"
+      })
+      antPolyline8.addTo(map)
+
+      let antPolyline9 = L.polyline.antPath(lineNine, {
+        color: "brown",
+        weight: 3, 
+        pulseColor: "lightgreen"
+      })
+      antPolyline9.addTo(map)
+
+      let antPolyline10 = L.polyline.antPath(lineTen, {
+        color: "aqua",
+        weight: 3, 
+        pulseColor: "blue"
+      })
+      antPolyline10.addTo(map)
     })
   });
 };
@@ -364,6 +500,74 @@ function bikecToggle(bikeType) {
       var stationInfo = infoRes.data.stations;
 
       fillStations(stationStatus, stationInfo, updatedAt, "classicbikes")
+      addLandmarks()
+
+      let antPolyline1 = L.polyline.antPath(lineOne, {
+        color: "red",
+        weight: 5
+      
+      })
+      antPolyline1.addTo(map)
+
+      let antPolyline2 = L.polyline.antPath(lineTwo, {
+        color: "green",
+        weight: 3
+      
+      })
+      antPolyline2.addTo(map)
+
+      let antPolyline3 = L.polyline.antPath(lineThree, {
+        color: "black",
+        weight: 3
+      })
+      antPolyline3.addTo(map)
+
+      let antPolyline4 = L.polyline.antPath(lineFour, {
+        color: "purple",
+        weight: 3
+    })
+      antPolyline4.addTo(map)
+
+      let antPolyline5 = L.polyline.antPath(lineFive, {
+        color: "black",
+        weight: 3,
+        pulseColor: "gold"
+      })
+      antPolyline5.addTo(map)
+
+      let antPolyline6 = L.polyline.antPath(lineSix, {
+        color: "black",
+        weight: 3,
+        pulseColor: "red"
+      })
+      antPolyline6.addTo(map)
+
+      let antPolyline7 = L.polyline.antPath(lineSeven, {
+        color: "darkgreen",
+        weight: 3
+      })
+      antPolyline7.addTo(map)
+
+      let antPolyline8 = L.polyline.antPath(lineEight, {
+        color: "teal",
+        weight: 3, 
+        pulseColor: "black"
+      })
+      antPolyline8.addTo(map)
+
+      let antPolyline9 = L.polyline.antPath(lineNine, {
+        color: "brown",
+        weight: 3, 
+        pulseColor: "lightgreen"
+      })
+      antPolyline9.addTo(map)
+
+      let antPolyline10 = L.polyline.antPath(lineTen, {
+        color: "aqua",
+        weight: 3, 
+        pulseColor: "blue"
+      })
+      antPolyline10.addTo(map)
     });
   })
 };
